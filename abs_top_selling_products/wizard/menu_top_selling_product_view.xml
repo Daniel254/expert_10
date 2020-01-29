@@ -6,24 +6,24 @@
         <field name="name">topselling.orderline.form</field>
         <field name="model">topselling.orderline</field>
         <field name="arch" type="xml">
-            <form string ="Products">
+            <form string ="Productos">
                 <group>
                     <group>
-                        <field name = "date_from" required = 'True'/>
-                        <field name = "date_to" required = 'True'/>
-                        <field name= "state" widget='selection' string = "Order by" required="1"/>
+                        <field name = "date_from" string="Desde" required = 'True'/>
+                        <field name = "date_to" string="Hasta" required = 'True'/>
+                        <field name= "state" widget='selection' string = "Ordenar por" required="1"/>
                     </group>
                 </group>
                 <footer>
-                    <button string='Submit' name = "top_selling_product" type='object' class='btn-primary'/>
-                    <button string='Cancel' class='btn-default' special="cancel"/>	
+                    <button string='Aceptar' name = "top_selling_product" type='object' class='btn-primary'/>
+                    <button string='Cancelar' class='btn-default' special="cancel"/>	
                 </footer>
             </form>		
         </field>
     </record>
 
     <record id="open_menu_top_selling_product" model="ir.actions.act_window">
-        <field name="name">Top Selling Product</field>
+        <field name="name">Productos más Vendidos</field>
         <field name="res_model">topselling.orderline</field>
         <field name="view_type">form</field>
         <field name="view_mode">form</field>
