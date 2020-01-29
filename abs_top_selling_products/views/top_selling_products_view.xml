@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <tree default_order='amount desc'>
                 <field name="product" string="Producto"/>
-                <field name="amount" string="Cantidad"/>
+                <field name="amount" string="Monto / Valor"/>
             </tree>
         </field>
     </record>
