@@ -5,7 +5,7 @@
         <field name="name">top.product.category.tree</field>
         <field name="model">top.product.category</field>
         <field name="arch" type="xml">
-            <tree create='false' edit='false' string="Top Selling Product Category" >
+            <tree create='false' edit='false' string="Productos mas vendidos por categoria" >
                 <field name="product_category_id"/>
                 <field name="amount"/>		
             </tree>
@@ -14,7 +14,7 @@
 
     <!-- add menu in saleorder -->
     <menuitem id="menu_top_selling_product_category"
-    name="Top Selling Product Category" 
+    name="Productos mas vendidos por categoria" 
     parent="sales_team.menu_base_partner"
     action="open_view_top_product_category_wizard_form_action" />
 </odoo>
