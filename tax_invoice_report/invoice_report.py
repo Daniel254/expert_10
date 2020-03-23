@@ -6,10 +6,7 @@
 #    Author: Treesa Maria Jude(<https://www.cybrosys.com>)
 #    you can modify it under the terms of the GNU LESSER
 #    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
-#
-#    It is forbidden to publish, distribute, sublicense, or sell copies
-#    of the Software or modified copies of the Software.
-#
+
 #    This program is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -54,8 +51,8 @@ class Invoicelinecount(models.Model):
 class AccountInvoiceReport(models.Model):
     _inherit = 'account.invoice.report'
 
-    amount_taxes = fields.Float(string='Total Impuestos', readonly=True)
-    amount_totals = fields.Float(string='Total con Impuestos', readonly=True)
+    amount_taxes = fields.Float(string='Total Tax', readonly=True)
+    amount_totals = fields.Float(string='Total With Tax', readonly=True)
     number = fields.Char(string='Invoice Number')
 
     def _select(self):
