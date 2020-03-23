@@ -6,8 +6,8 @@
         <field name="model">sale.quantity</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="product"/>
-                <field name="quantity"/>
+                <field name="product" string="Producto"/>
+                <field name="quantity" string="Cantidad"/>
             </tree>
         </field>
     </record>

@@ -3,7 +3,7 @@
 
     <!-- create a submenu in menu Sales name as 'Top Selling Products'-->
     <menuitem id = "menu_top_selling_products"
-        name = "Top Selling Products"
+        name = "Productos más Vendidos"
         parent = "sales_team.menu_sales"
         action = "open_menu_top_selling_product"/>
 

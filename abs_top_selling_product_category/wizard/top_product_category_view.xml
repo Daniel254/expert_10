@@ -5,21 +5,21 @@
         <field name="name">top.product.category.wizard.form</field>
         <field name="model">top.product.category.wizard</field>
         <field name="arch" type="xml">
-            <form string ="Top Selling Product Category">                 
+            <form string ="Productos mas vendidos por categoria">                 
                 <group> 
-                    <field name="from_date" required="1"/>
-                    <field name="to_date" required="1"/>  
+                    <field name="from_date" string="Desde" required="1"/>
+                    <field name="to_date" string="Hasta" required="1"/>  
                 </group>
                 <footer>
-                    <button string='Submit' name="top_product_category" type='object' class='btn-primary'/>
-                    <button string='Discard' class='btn-default' special="cancel"/>	
+                    <button string='Aceptar' name="top_product_category" type='object' class='btn-primary'/>
+                    <button string='Descartar' class='btn-default' special="cancel"/>	
                 </footer>
             </form>		
         </field>
     </record>
     <!-- wizard view action -->
     <record id="open_view_top_product_category_wizard_form_action" model="ir.actions.act_window">
-        <field name="name">Top Selling Product Category</field>
+        <field name="name">Productos mas vendidos por categoria</field>
         <field name="res_model">top.product.category.wizard</field>
         <field name="view_type">tree</field>
         <field name="view_mode">form,tree</field>

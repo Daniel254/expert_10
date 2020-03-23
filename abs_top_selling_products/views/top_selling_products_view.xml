@@ -6,8 +6,8 @@
         <field name="model">sale.products</field>
         <field name="arch" type="xml">
             <tree default_order='amount desc'>
-                <field name="product"/>
-                <field name="amount"/>
+                <field name="product" string="Producto"/>
+                <field name="amount" string="Monto / Valor"/>
             </tree>
         </field>
     </record>
